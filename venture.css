@@ -1,0 +1,1019 @@
+
+
+@font-face {
+font-family: Moon_Light;
+src: url("/Moon_Light.otf") format("opentype");
+}
+
+video {
+  height: 720px;
+  width: 1280px;
+
+}
+.info {
+height: 90%;
+font-family: Moon_Light;
+  text-align:center;
+  display:table;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  top: 740px;
+}
+* {
+
+  margin:0;
+  font-family: 'Helvetica';
+  color: rgba(251, 247, 251, 0.98);
+
+}
+
+body {
+
+  background-image: url("background.jpg");
+
+}
+
+
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainvidsection {
+
+display: block;
+height: 50%;
+
+margin: auto;
+position: relative;
+padding-top:.1%;
+
+}
+
+
+#video-container {
+
+display: block;
+height: 100%;
+width: auto;
+position: relative;
+margin: auto;
+
+
+
+}
+
+#mainvidwrapper {
+
+
+  width: auto;
+display: block;
+height: 100%;
+position: relative;
+}
+
+
+
+
+#venus {
+
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+
+}
+
+
+#mercury {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+}
+
+#manifesto {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+}
+
+#earth {
+
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+
+}
+
+#mars {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+}
+
+#jupiter {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+}
+
+#saturn {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+}
+
+#uranus {
+
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+
+
+}
+
+#neptune {
+
+position: absolute;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin: auto;
+  right: 1%;
+  left: 1%
+;
+
+}
+
+#test {
+
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 60%;
+  top: 0;
+  margin: auto;
+  right: 10%;
+  left: 10%
+}
+
+
+
+/*vid controls css  */
+
+
+
+#video-controls {
+position: relative;
+width: 60%;
+display: block;
+margin: auto;
+background-color: black;
+font-size: 1.5em;
+bottom: -5px;
+}
+
+/*
+
+use this for video-controls once real video is in there
+
+position: relative;
+padding: 5px;
+padding-left: 0px;
+opacity: .9;
+background-color: black;
+font-size: 1.5em;
+width: 70%;
+margin: auto;
+
+*/
+
+button {
+  background: rgba(0,0,0,.5);
+  border: 0;
+  color: #EEE;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:focus {
+
+  outline: none;
+}
+
+#seek-bar {
+    width: 100%;
+    position: relative;
+    display: block;
+
+}
+
+
+
+/* my own controller styles */
+
+
+
+
+
+
+
+#play-pause {
+
+  font-size: 1em;
+    margin-left:2%;
+   color: #FF547B;
+
+
+}
+
+#mute {
+
+  font-size: 1em;
+    margin-left: 2%;
+       color: #FF547B;
+
+
+
+}
+
+/*
+.icon-screen-full {
+
+  font-size: .75em;
+}
+
+
+
+button#full-screen {
+
+position: relative;
+
+vertical-align: middle;
+padding-left: 2%;
+font-size: 1em;}
+
+#currentTime {
+
+  padding-left: 3%;
+
+} */
+
+
+
+
+
+
+
+
+/* range attempt at looking like youtube ish */
+
+input[type=range] {
+  -webkit-appearance: none;
+  border-radius: 0px;
+  vertical-align: middle;
+  margin: -8px 0 0 0;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  position: relative;
+  pointer-events:none;
+  width: 8px;
+  height: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #757575;
+  height: 8px;
+  margin:5px 0;
+
+}
+input[type=range]::-webkit-slider-thumb:before {
+  content:"-";
+  font-style: 0;
+  line-height:0;
+  position: absolute;
+  left:-3000px;
+  right:0;
+  top:0;
+  bottom:0;
+  background: #cc181e;
+}
+input[type=range]::-webkit-slider-thumb:after {
+  content: "";
+  position: absolute;
+  left:-4px;
+  right:-4px;
+  top:-4px;
+  bottom:-4px;
+  background: #adadad;
+  border-radius: 50%;
+  border:5px solid #e8e8e8;
+  z-index: 10;
+}
+input[type=range]:focus {
+  outline:none;
+}
+input[type=range]:hover::-webkit-slider-thumb:after,
+input[type=range]:focus::-webkit-slider-thumb:after {
+  background: #cc181e;
+}
+input[type=range]:disabled::-webkit-slider-thumb:before {
+  background-color: #a1151a;
+}
+input[type=range]:disabled::-webkit-slider-thumb:after {
+  background: #adadad !important;
+}
+
+
+
+
+/* end css controls */
+
+
+
+
+
+
+
+
+
+.gotime {
+
+  border: 2px solid #FF547B;
+  border-radius: 2px;
+  margin:auto;
+  font-size: 2em;
+  width: 20%;
+  text-align: center;
+  top: 45%;
+  position:absolute;
+  right: 41%;
+  z-index: 9;
+
+
+}
+
+.gotime:hover {
+
+  background-color: #2ECC71;
+  border: 4px solid #FF547B;
+
+}
+
+
+
+
+
+
+.footer {
+
+  font-size: 1.5em;
+  position:absolute;
+  bottom:2%;
+  right: 2%;
+}
+
+.icon-facebook-circled {
+
+    font-size: 1.5em;
+  position:absolute;
+  bottom:2%;
+  left: 5%;
+
+
+}
+
+.icon-twitter {
+
+    font-size: 1.5em;
+    position:absolute;
+    bottom:2%;
+    left:2%;
+}
+
+
+
+
+
+
+/*nav menu stuff */
+
+.wrapper {
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mobile-nav {
+
+position: absolute;
+z-index: 99999;
+padding-left: 2%;
+padding-top:1%;
+
+}
+
+
+
+.menu-btn  {
+
+padding-top: 2%;
+z-index: 999;
+}
+
+.menu-btn span {
+
+  display: block;
+  width: 1.75em;
+  height: 2.37px;
+  margin: .1em;
+  z-index: 999;
+  font-size: 5em;
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+
+.responsive-menu{
+  display: none;
+}
+
+.expand {
+ display: block !important;
+background-color: rgba(35,35,35,1);
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 99;
+
+}
+
+/*end nav menu stuff */
+
+/*crazy logo stuff here */
+
+
+
+.crazylogo {
+
+position: relative;
+left: 20%;
+
+float: left;
+top: 48%;
+
+}
+
+.crazylogoside {
+
+position: relative;
+float: right;
+top: 15%;
+font-size: 1.75em;
+display: block;
+width: 20%;
+padding-right: 10%;
+}
+
+
+.crazylogoside a {
+
+  text-decoration: underline;
+}
+
+.crazylogoside a:hover {
+
+  font-weight: bold;
+
+
+}
+
+.logotext {
+
+position: relative;
+/* top: 75%; */
+/* right: 46%; */
+margin: 42%;
+display: block;
+/* height: 10%; */
+z-index: 9999;
+
+}
+
+
+.logotext img {
+
+  height:100%;
+  width:auto;
+  display: block;
+  z-index:99999999999;
+
+
+}
+
+.logotext:hover {
+
+  border-bottom:9px;
+  color:black;
+}
+
+
+
+
+
+content {
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  padding:.3em;margin:auto;
+  border-radius:100em;
+  box-shadow:0 0 1em 0 hsla(0,0%,0%,.3);
+  -o-box-shadow:0 0 1em 0 hsla(0,0%,0%,.3);
+  -moz-box-shadow:0 0 1em 0 hsla(0,0%,0%,.3);
+  -webkit-box-shadow:0 0 1em 0 hsla(0,0%,0%,.3);
+  display:block;
+  z-index:1;
+  font-size:1em;
+  font-weight:900;
+  line-height:.5em;
+  text-align:center;
+}
+
+
+content:before {
+  content:'â€¢';
+  position:absolute;
+  top:-2em;left:0;right:0;
+  padding:0;margin:auto;
+  filter:blur(.05em);
+  -o-filter:blur(.05em);
+  -moz-filter:blur(.05em);
+  -webkit-filter:blur(.05em);
+  display:block;
+  opacity:.6;
+  font-size:5em;
+}
+
+
+content:after {
+  content:'â€¢';
+  position:absolute;
+  bottom:-3em;left:0;right:0;
+  padding:0;margin:auto;
+  filter:blur(.05em);
+  -o-filter:blur(.05em);
+  -moz-filter:blur(.05em);
+  -webkit-filter:blur(.05em);
+  display:block;
+  opacity:.8;
+  font-size:5em;
+}
+
+#one {
+  left:1em;
+  width:7em;height:7em;
+  animation:loading 7s linear infinite;
+  -o-animation:loading 7s linear infinite;
+  -moz-animation:loading 7s linear infinite;
+  -webkit-animation:loading 7s linear infinite;
+  background-image: url('logo.svg');
+  background-color: black;
+}
+
+#one:hover {
+
+  width:8em;
+  height: 8em;
+
+}
+
+#two {
+right: 1em;
+width: 8em;
+height: 8em;
+animation: loading 5s linear infinite;
+-o-animation: loading 5s linear infinite;
+-moz-animation: loading 5s linear infinite;
+-webkit-animation: loading 5s linear infinite;
+background-color: black;
+}
+#three {
+  left: 1em;
+width: 10em;
+height: 10em;
+animation: loading 3s linear infinite;
+-o-animation: loading 3s linear infinite;
+-moz-animation: loading 3s linear infinite;
+-webkit-animation: loading 3s linear infinite;
+background-color: #FF547B;
+color: #FF547B;
+}
+#four {
+  right: 1em;
+width: 13em;
+height: 13em;
+animation: loading 7s linear infinite;
+-o-animation: loading 7s linear infinite;
+-moz-animation: loading 7s linear infinite;
+-webkit-animation: loading 7s linear infinite;
+background-color: #B4DD57;
+color: #B4DD57;
+}
+#five {
+  width: 14em;
+height: 14em;
+animation: loading 10s linear infinite;
+-o-animation: loading 10s linear infinite;
+-moz-animation: loading 10s linear infinite;
+-webkit-animation: loading 10s linear infinite;
+background-color: #FF547B;
+color: #FF547B;
+}
+
+@keyframes loading {
+  0% {transform:rotate(360deg);}
+  25% {transform:rotate(0deg);}
+  75% {transform:rotate(360deg);}
+  100% {transform:rotate(0deg);}
+}
+@-o-keyframes loading {
+  0% {-o-transform:rotate(360deg);}
+  25% {-o-transform:rotate(0deg);}
+  75% {-o-transform:rotate(360deg);}
+  100% {-o-transform:rotate(0deg);}
+}
+@-moz-keyframes loading {
+  0% {-moz-transform:rotate(360deg);}
+  25% {-moz-transform:rotate(0deg);}
+  75% {-moz-transform:rotate(360deg);}
+  100% {-moz-transform:rotate(0deg);}
+}
+@-webkit-keyframes loading {
+  0% {-webkit-transform:rotate(360deg);}
+  25% {-webkit-transform:rotate(0deg);}
+  75% {-webkit-transform:rotate(360deg);}
+  100% {-webkit-transform:rotate(0deg);}
+}
+
+
+.logo {
+  display:block;
+  height:100%;
+  width: 100%;
+
+}
+
+
+.responsive-menu  {
+
+  background-color: ;
+}
+
+
+/* start floating elements stuff */
+
+
+/*floating logo element and animation */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes floater {
+
+    0%   {bottom: -80%; right: 80%;}
+    10% {bottom: 80%; right:-50%;}
+    20% {bottom: -100%; right: 0%;}
+    40% {bottom: 30%; right: 130%;}
+    70% {bottom: 60%; right: -110%;}
+    100% {bottom: 110%; right:50%;}
+
+  }
+
+/* Standard syntax */
+@keyframes floater {
+
+    0%   {bottom: -80%; right: 80%;}
+    10% {bottom: 80%; right:-50%;}
+    20% {bottom: -100%; right: 0%;}
+    40% {bottom: 30%; right: 130%;}
+    70% {bottom: 60%; right: -110%;}
+    100% {bottom: 110%; right:50%;}
+
+}
+
+
+
+.floater img {
+
+  height: 20em;
+  position: absolute;
+  z-index: -99999;
+  bottom: -100%;
+
+  -webkit-animation: spin 2s infinite;
+  animation: spin 2s infinite;
+
+
+  -webkit-animation: floater 180s infinite;
+  /* Chrome, Safari, Opera */
+    animation: floater 180s infinite;
+
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+
+/*end floating logo element, start floating cleo element */
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes floaterdoge {
+
+
+0% {bottom: 110%; right:50%;}
+10% {bottom: 60%; right: -110%;}
+30% {bottom: 30%; right: 130%;}
+50% {bottom: -100%; right: 0%;}
+70% {bottom: 80%; right:-50%;}
+100% {bottom: -80%; right: 80%;}
+
+
+
+  }
+
+/* Standard syntax */
+@keyframes floaterdoge {
+
+0% {bottom: 160%; right:50%;}
+10% {bottom: 60%; right: -110%;}
+30% {bottom: 30%; right: 130%;}
+50% {bottom: -100%; right: 0%;}
+70% {bottom: 80%; right:-50%;}
+100% {bottom: -80%; right: 80%;}
+
+}
+
+
+.cleedoge {
+
+  display: block;
+  height: 20em;
+  width: auto;
+  position: absolute;
+  z-index: -9;
+  overflow: hidden;
+
+-webkit-animation: floaterdoge 90s infinite;
+  /* Chrome, Safari, Opera */
+    animation: floaterdoge 90s infinite;
+
+    -webkit-animation-delay: 0s;
+
+    animation-delay: 0s;
+
+
+}
+
+
+.cleedoge img {
+
+  height: 100%;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+/* end floating element stuff */
+
+
+
+
+/*start of hamburger transition (just the burger itself) css */
+
+
+
+
+.burger {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+
+    border-radius: 4px;
+
+
+    -khtml-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.nav-hamburger,
+.nav-hamburger:after,
+.nav-hamburger:before {
+    position: relative;
+    display: block;
+    width: 30px; /* the width of the lines */
+    height: 3px; /* this is the thickness of each line in the nav */
+    margin-top: 18px;
+    margin-left: 6px;
+
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    -webkit-transform-origin: 50% 120%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+
+    border: 2px;
+    border-radius: 2px;
+    background-color: #FF547B; /*color of the nav */
+}
+
+.nav-hamburger:before {
+    position: absolute;
+    top: -12px;
+    right: 0;
+
+    display: block;
+
+    margin: 0;
+
+    content: ' ';
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.nav-hamburger:after {
+    position: absolute;
+    top: 12px;
+    right: 0;
+
+    display: block;
+
+    margin: 0;
+
+    content: ' '; /*this is the first 'line' of the nav */
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.burger.open {
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+
+    border-bottom: none;
+    border-radius: 4px;
+
+}
+
+.burger.open .nav-hamburger {
+    width: 22px;
+    height: 4px;
+    margin-top: 18px;
+    margin-left: 15px;
+
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    background-color: rgba(33, 43, 50, 0); /* change this to match backgrounc color - it's a mask */
+}
+
+.burger.open .nav-hamburger:before {
+    top: 9px;
+    right: 0;
+
+    width: 24px;
+    height: 4px;
+
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger.open .nav-hamburger:after {
+    top: -8px;
+    right: 3px;
+
+    width: 24px;
+    height: 4px;
+
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+a:hover + .nav-hamburger:hover .nav-hamburger::before:hover .nav-hamburger::after:hover  {
+
+  height: 7px;
+}
+
+
+/* end burger transition stuff */
+
+
+
+/* beginning of media query font size changes */
+
+@media only screen and (min-width: 320px) { body { font-size: 45%;  } }
+@media only screen and (min-width: 400px) { body { font-size: 57%;  } }
+@media only screen and (min-width: 500px) { body { font-size: 65%;  } }
+@media only screen and (min-width: 550px) { body { font-size: 70;  } }
+@media only screen and (min-width: 600px) { body { font-size: 74%;  } }
+@media only screen and (min-width: 650px) { body { font-size: 79%; } }
+@media only screen and (min-width: 768px) { body { font-size: 86%;  } }
+@media only screen and (min-width: 850px) { body { font-size: 90%;  } }
+@media only screen and (min-width: 950px) { body { font-size: 95%;  } }
+@media only screen and (min-width: 1000px) { body { font-size: 100%;  } }
+@media only screen and (min-width: 1200px) { body { font-size: 110%;  } }
+@media only screen and (min-width: 1400px) { body { font-size: 120%;  } }
+@media only screen and (min-width: 1600px) { body { font-size: 130%;  } }
+@media only screen and (min-width: 1800px) { body { font-size: 140%;  } }

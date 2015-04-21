@@ -1,0 +1,393 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Gravity's Dance</title>
+    <meta name="description" content="Gravity's Dance">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).keypress(function(e){
+            var key = e.which;
+            if (key == 114)//Type R for Mercury
+
+            {
+                $('#mercury').show();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide()
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $('#manifesto').hide();
+
+                $("#mercury").prop("muted",false);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 118) {//V
+                $('#mercury').hide();
+                $('#venus').show();
+                $('#earth').hide();
+                $('#mars').hide()
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $('#manifesto').hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", false);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 101) {//E
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').show();
+                $('#mars').hide()
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $('#manifesto').hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", false);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 109) {//M
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').show();
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $("#manifesto").hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", false);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 106) {//J
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide();
+                $('#jupiter').show();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $('manifesto').hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", false);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 115) {//S
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide()
+                $('#jupiter').hide();
+                $('#saturn').show();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $('manifesto').hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", false);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 117) {//U
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide();
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').show();
+                $('#neptune').hide();
+                $('#manifesto').hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", false);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 110) {//N
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide();
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').show();
+                $("#manifesto").hide();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", false);
+
+                $("#manifesto").prop("muted", true);
+
+            } else if (key == 111) {//O
+                $('#mercury').hide();
+                $('#venus').hide();
+                $('#earth').hide();
+                $('#mars').hide();
+                $('#jupiter').hide();
+                $('#saturn').hide();
+                $('#uranus').hide();
+                $('#neptune').hide();
+                $("#manifesto").show();
+
+                $("#mercury").prop("muted",true);
+
+                $("#venus").prop("muted", true);
+
+                $("#earth").prop("muted", true);
+
+                $("#mars").prop("muted", true);
+
+                $("#jupiter").prop("muted", true);
+
+                $("#saturn").prop("muted", true);
+
+                $("#uranus").prop("muted", true);
+
+                $("#neptune").prop("muted", true);
+
+                $("#manifesto").prop("muted", false);
+
+            }
+
+
+        });
+
+
+    </script>
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="venture.css">
+    <!-- Modernizr -->
+    <script src="_include/js/modernizr.min.js"></script>
+  <!--  <link href="_include/css/all.min.css" rel="stylesheet">
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>
+</head>
+
+
+    <div class="mainvidsection">
+
+
+        <div id="video-container">
+
+            <!-- I had this one starting muted, but taking it out until i fix it up. just add the plain old word muted before the div id-->
+
+            <div class="mainvidwrapper">
+
+
+                <video muted preload="auto" id="mercury" autoplay loop>
+                    <source src="Mercury_2.webm" type="video/webm">
+                    <source src="Mercury_2.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="venus" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Venus.webm" type="video/webm">
+                    <source src="Venus.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="earth" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Earth.webm" type="video/webm">
+                    <source src="Earth.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="mars" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Mars.webm" type="video/webm">
+                    <source src="Mars.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="jupiter" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Jupiter.webm" type="video/webm">
+                    <source src="Jupiter.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="saturn" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Saturn.webm" type="video/webm">
+                    <source src="Saturn.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="uranus" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Uranus.webm" type="video/webm">
+                    <source src="Uranus.mp4" type="video/mp4">
+
+                </video>
+
+                <video muted preload="auto" id="neptune" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Neptune.webm" type="video/webm">
+                    <source src="Neptune.mp4" type="video/mp4">
+
+                </video>
+
+                <video preload="auto" id="manifesto" autoplay loop> <!-- this one's one top, the main video or whatevs -->
+
+                    <source src="Manifesto.webm" type="video/webm">
+                    <source src="Manifesto.mp4" type="video/mp4">
+
+                </video>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="header" class="info">
+        <p>Press R for Mercury, V for Venus, E for Earth, M for Mars, J for Jupiter, S for Saturn, U for Uranus, N for Neptune, and O for the Manifesto</p>
+    </div>
+
+
+<!-- controls script -->
+
+<script src="script.js"></script>
+</body>
+</head>
+</html>
+</html>
